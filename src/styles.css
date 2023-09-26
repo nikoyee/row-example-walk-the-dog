@@ -1,0 +1,58 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.row {
+  min-height: 20px;
+  padding: 10px;
+}
+
+.row:first-child,
+.row + .row {
+  border-bottom: 1px solid black;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.row-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row-bottom {
+  margin-top: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button.booked {
+  color: blue;
+  background: white;
+  border: 2px solid blue;
+  border-radius: 3px;
+  padding: 5px 8px;
+}
+
+button.available {
+  color: white;
+  background: blue;
+  border: 2px solid blue;
+  border-radius: 3px;
+  padding: 5px 12px;
+}
+
+.dog-svg {
+  margin-right: 8px;
+}
+
+p.booked-not-user {
+  color: gray;
+  font-size: 16px;
+}
